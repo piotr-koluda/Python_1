@@ -20,7 +20,11 @@ def print_twinkle(name):
 if __name__ == '__main__':
     print_twinkle('test')
     a = [1,1,2,3,5,8,13,21,34,55,89]
+    b = [1,78,44,34,2,3,5,8,13,21,34,55,89]
     Training.odd_even(3)
     Training.list_les(a, 55)
-    Training.divisorts(12)
+    Training.divisorts(10)
+    Training.overlap_lists(a, b)
+
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
