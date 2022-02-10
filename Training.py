@@ -24,11 +24,11 @@ def divisorts(num_1: int):
     res = []
     rezult = []
     res = list(range(1, num_1))
-    print(res)
+    #(res)
     for i in res:
         if num_1 % i == 0:
             rezult.append(i)
-    print(rezult)
+    return rezult
 
 def overlap_lists(list_1, list_2):
     list_1_len = len(list_1)
@@ -74,3 +74,27 @@ def guessing_game():
             print("too low")
 
         input_num = input("Please provide number")
+
+def comprehension_list(list_1:[], list_2:[]):
+    result_list = [i for i in set(list_1) if i in list_2]
+    return [i for i in result_list if result_list.count(i)==1]
+
+def prime_number(number_1: int):
+    if len(divisorts(number_1)) == 1:
+        print("it is prime numebr")
+    else:
+        print("it is not prime numebr")
+
+def list_ends(input_list:[]):
+    return [input_list[0], input_list[-1]]
+
+def Fibonacci(input_num: int):
+    result_list =[]
+    while len(result_list)< input_num:
+        if len(result_list)==0:
+            result_list.append(1)
+        elif len(result_list) == 1:
+            result_list.append(1)
+        else:
+            result_list.append(result_list[-1]+result_list[-2])
+    return result_list

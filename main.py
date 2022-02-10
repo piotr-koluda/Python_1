@@ -30,7 +30,9 @@ if __name__ == '__main__':
     #new_list = [num for num in a if num%2==0] # całkiem instotne - zapamiętać jak to robić, bo może się bardzo przydał w przysłości
     #print(new_list);
     #vlaue = input("value")
-    Training.guessing_game()
-
-
+    #Training.guessing_game()
+    #print(sorted(Training.comprehension_list(a, b)))
+    #Training.prime_number(12)
+    #print(Training.list_ends(a))
+    print(Training.Fibonacci(14))
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
