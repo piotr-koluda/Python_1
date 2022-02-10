@@ -45,7 +45,7 @@ def overlap_lists(list_1, list_2):
 
     for element in list_smaller:
         if element in list_larger:
-            outout_list.append(element)
-
+            if element not in outout_list:
+             outout_list.append(element)
 
     print(outout_list)
