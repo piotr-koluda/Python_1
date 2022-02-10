@@ -1,5 +1,6 @@
 # small file to stroing training data from webside:
 # https://www.practicepython.org/
+import random
 
 
 def odd_even(num_1: int):
@@ -46,6 +47,30 @@ def overlap_lists(list_1, list_2):
     for element in list_smaller:
         if element in list_larger:
             if element not in outout_list:
-             outout_list.append(element)
+                outout_list.append(element)
 
     print(outout_list)
+
+
+def palindorm(sentence):
+    sentence = str(sentence)
+    reverse = sentence[::-1]
+    if sentence == reverse:
+        print("it is palindorm")
+    else:
+        print("it is not palindrom")
+
+def guessing_game():
+    ran_num = random.randint(1, 9)
+    input_num = input("Please provide number")
+    while input_num != "exit":
+
+        if int(input_num) == ran_num:
+            print("Exact number")
+            break
+        elif int(input_num) > ran_num:
+            print("too high")
+        else:
+            print("too low")
+
+        input_num = input("Please provide number")
